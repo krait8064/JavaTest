@@ -15,4 +15,5 @@ public class ConstantPoolTest {
         a = a.substring(2);
         System.out.println(String.format("a:%s,b:%s,c:%s", a, b, c));
     }
+
 }
