@@ -16,6 +16,7 @@ public class VolatileTest {
     public static void main(String[] args) {
         int threadCount = 10;
         System.out.println(Thread.activeCount() + " active");
+        Thread.currentThread().getThreadGroup().list();
         for (int i = 0; i < threadCount; i++) {
             new Thread(new Runnable() {
                 @Override
