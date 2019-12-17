@@ -14,8 +14,10 @@ public class PriorityQueueTest {
     public void test() {
         PriorityQueue<Integer> queue = new PriorityQueue<>(2, Comparator.comparingInt(Integer::intValue));
         queue.add(3);
-        queue.add(2);
+        queue.add(4);
         queue.add(1);
         Integer poll = queue.poll();
+        Integer poll1 = queue.poll();
+        Integer poll2 = queue.poll();
     }
 }
