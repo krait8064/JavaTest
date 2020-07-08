@@ -1,5 +1,7 @@
 package cn.krait8063.algorithm;
 
+import org.junit.Test;
+
 /**
  * created by krait8064 at 2020/07/07
  * 动态规划
@@ -26,6 +28,20 @@ public class MaxSquare {
         }
         int maxSquare = maxSide * maxSide;
         return maxSquare;
+    }
+
+    @Test
+    public void test() {
+//        1 0 1 0 0
+//        1 0 1 1 1
+//        1 1 1 1 1
+//        1 0 0 1 0
+        char[][] arr = {
+                {'1','0','1','0','0'},
+                {'1','0','1','1','1'},
+                {'1','1','1','1','1'},
+                {'1','0','1','1','0'}};
+        int i = maximalSquare(arr);
     }
 
 }
